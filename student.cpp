@@ -29,6 +29,10 @@ void student::addGrade( double in ) {
 
 double student::getScore(){
     double fin;
-    fin = score / count;
+    if ( score == 0 ) {
+        fin = 0;
+    } else {
+        fin = score / count;
+    }
     return fin;
 }
